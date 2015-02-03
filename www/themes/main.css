@@ -1,0 +1,175 @@
+@CHARSET "UTF-8";
+
+#scriptTabs .tabs{
+	background:#eee;
+}
+
+#modules .tree-folder{
+    background:url('default/images/basic.png') no-repeat;
+}
+
+#modules .tree-file {
+	background: url('default/images/gears.png') no-repeat;
+}
+
+#XMLHolder .AttributeName {
+	font-weight:bold;
+	color: black;
+}
+
+#XMLHolder .NodeName {
+	font-weight:bold;
+	color: purple;	
+}
+
+#XMLHolder .AttributeValue {
+	color:blue;
+}	
+/* main body */
+body.main {
+	font-family:Arial, Helvetica, Sans-Serif; 
+	font-size:12px;
+	margin:0px;
+	height:100%;
+}
+
+html {
+	height:100%;
+}
+
+#mainContainer {
+	margin:0px 0px;
+}
+
+#frmTestAPI{
+	height:98%;
+}
+
+#frmTestAPI label{
+	color:#777777;
+	font-weight:bold;
+	font-size:14px;
+}
+
+#frmTestAPI a{
+	color:#416AA3;
+	font-weight:bold;
+	font-size:12px;
+}
+
+#frmTestAPI textarea{
+	border:solid 1px #A4BED4;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height:100px;
+	resize:none;
+}
+
+/*
+#dlgMethod {
+	padding:5px;
+}
+
+#dlgMethod label {
+	color:#777777;
+	font-weight:bold;
+}
+
+#dlgMethod textarea {
+	border:solid 1px #A4BED4;
+	width:495px;
+	height:100px;
+}
+
+#dlgMethod td {
+	vertical-align:top;
+}
+
+#dlgMethod .dgContainer {
+	height:162px;
+}*/
+
+#scriptEditDlg {
+	padding:5px;
+}
+
+#scriptEditDlg .dgContainer {
+	width:570px;
+	height:260px;
+}
+
+#scriptEditDlg label {
+	color:#777777;
+	font-weight:bold;
+}
+
+.dgContainer {
+	background-color:white;
+	border:solid 1px #A4BED4;
+}
+
+#footer {
+	width:400px;
+	margin-left:-200px;
+	position:absolute;
+	bottom:10px;
+}
+
+.label {
+    color:gray;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.hcenter {
+    position:relative;
+    left:50%;
+}
+
+.vcenter {
+	position:relative;
+	top:50%;
+}
+
+#heading {
+    color: white;
+    background-color:gray;
+    font-weight: bold;
+    padding: 5px;
+    height:31px;
+}
+
+#heading table {
+	border: 1;
+	width: 100%;
+	height: 100%;
+}
+
+#heading img {
+	vertical-align: middle;
+}
+
+#heading input[type=text], input[type=password] {
+	border: none;
+	background-color: transparent;
+	border-bottom: solid 1px white;
+}
+
+#testcasetable td {
+	vertical-align:top;
+}
+
+.textbox {
+	white-space: nowrap;
+  	border-width: 1px;
+  	border-style: solid;
+  	overflow: hidden;
+  	vertical-align: middle;
+  	border-color: #D3D3D3;
+  	background-color: #ffffff;
+  	font-size: 12px;
+  	line-height: 20px;
+  	margin: 0;
+  	padding: 0px 2px;
+}

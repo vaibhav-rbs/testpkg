@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+.heading {
+    color:gray;
+    font-weight:bold;
+    font-size:16px;
+    word-wrap: break-word;
+}
+
+.title {
+	color:gray;
+	font-weight:bold;
+	font-size:16px;
+	display:inline-block;
+}
+
+.text {
+	color:gray;
+	word-wrap: break-word;
+}
+
+.error {
+	background-color:yellow;
+	color:red;
+	padding:3px;
+}
+
+.pass {
+	background-color:green;
+	color:white;
+	padding:5px;
+}
+
+.fail {
+	background-color:red;
+	color:yellow;
+	padding:5px;
+}
+
+.vcenter {
+	position:relative;
+	top:50%;
+}

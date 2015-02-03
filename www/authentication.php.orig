@@ -1,0 +1,57 @@
+<?php
+/* Authentication
+ * It authenticates user cored id and password to let the user log in
+ */
+$err_message = "";
+
+// receives username and password
+$user_name_php = $_POST['name'];
+$user_pass_php = $_POST['password'];
+
+if ($user_name_php != NULL && $user_pass_php != NULL) {
+        /*
+	$ldaprdn = "motguid=" . $user_name_php . ", ou=people, ou=intranet, dc=motorola, dc=com";
+	$dn = "ou=people, ou=intranet, dc=motorola, dc=com";
+	$search_target = "motguid=" . $user_name_php;
+	
+	$ldapconn = ldap_connect("ids.mot-mobility.com") or die("Could not connect to LDAP server");
+
+	if ($ldapconn) {
+
+		$ldapbind = ldap_bind($ldapconn, $ldaprdn, $user_pass_php);
+
+		if ($ldapbind) {
+			$search = ldap_search($ldapconn, $dn, $search_target);
+			$info = ldap_get_entries($ldapconn, $search);
+			
+			if ($info["count"] == 1) {
+				$user_first_name = $info[0]["motdisplayfirstname"][0];
+				$user_last_name = $info[0]["motdisplaylastname"][0];
+				$user_string = $user_name_php . "^" . $user_first_name . "^" .$user_last_name;	
+				// locate to clientMain.php
+	*/
+				$user_string = "vaibhavchauhan" . "^" . "vaibhav" . "^" ."chauhan";	
+				header("Location: login.php?user_string=" . $user_string);
+				setcookie("testdepot_user_str", $user_string, time()+3600*3, "http://testdepot.mot-mobility.com");
+				exit;
+			} else {
+				$err_message = "There are duplicate users found!";
+				header("Location: login.php?err_message=" . $err_message);
+				exit;
+			}
+		} else {
+			$err_message = "Authentication failed";
+			header("Location: login.php?err_message=" . $err_message);
+			exit;
+		}
+	} else {
+		$err_message = "Cannot to connect server. Please try again";
+		header("Location: login.php?err_message=" . $err_message);
+		exit;
+	}
+} else {
+	$err_message = "Please enter core ID and One-IT password";
+	header("Location: login.php?err_message=" . $err_message);
+	exit;
+}
+?>

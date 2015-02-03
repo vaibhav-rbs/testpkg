@@ -1,0 +1,5 @@
+public void METHODNAME (INFOPARAM @Param("deviceID") String deviceID) throws Exception {
+            String pyCode ="samples/FOLDERNAME/FILENAME";
+            processData(PARAMSTRING,pyCode,deviceID);
+
+}

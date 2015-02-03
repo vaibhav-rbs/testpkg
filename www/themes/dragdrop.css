@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+.dragContainer{
+	background:#7CB6E2;
+	width:20%;
+	height:auto;
+	float:right;
+}
+.dragContainer p{
+	margin:7px;
+	color:white;
+	word-wrap:break-word;
+	vertical-align:top;
+}
+
+.dragContainer p.class{
+	color:#FFE48C;
+	font-weight:bold;
+}
+.dragContainer p.className{
+	color:#FFE48C;
+}
+.dragContainer img{
+	margin-left:3px;
+}
+.dragContainer p.function{
+	color:#A6FF30;
+	font-weight:bold;
+}
+.dragContainer p.functionName{
+	color:#A6FF30;
+}
+.dragContainer p.label{
+	font-weight:bold;
+}
+.dragContainer p.text{
+	font-style:italic;
+}
+.dropContainer{
+	background:#fafafa;
+	width:80%;
+	height:100%;
+	float:left;
+}

@@ -1,0 +1,84 @@
+-INVADERINSERTPACKAGE
+
+/* invaderPlus related imports */
+/**
+ * ClassName : INVADERINSERTFOLDER/ 
+ * @author -  
+ * 
+ * */
+
+
+import com.motorola.wireless.qa.invaderPlus.TaskEnv;
+import com.motorola.wireless.qa.invaderPlus.annotation.Param;
+import com.motorola.wireless.qa.invaderPlus.annotation.TestElement;
+import com.motorola.wireless.qa.invaderPlus.result.StatusCode;
+import com.motorola.wireless.qa.invaderPlus.SupportingLib.InvaderPlusSupport;
+
+/* For Logging purpose */
+import com.motorola.wireless.qa.logging.LogSource;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Properties;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+
+/*For Java RunTime */
+import java.io.*;
+
+public class INVADERCLASSNAME {
+	InvaderPlusSupport runtimeSupport = new InvaderPlusSupport();
+
+
+   
+        INVADERINSERTMETHODS
+
+
+ 
+        public void processData(String information, String pycode,String strdevID) throws Exception{
+        	try {
+    			boolean bScreenshotRequired = false;
+    			Runtime run = Runtime.getRuntime();
+    			if (information.equals("\""))
+    				information="";
+    			String cmd = "cd apython;python runtests.py --settings Device_setup.py --args " + "\"" + information + "\"" + " --devID " + strdevID  +"  \""+pycode+"\"";
+    			LogSource.get().info("for test"+cmd);
+    			runtimeSupport.prepareRunTimeConfiguration(cmd);
+    			Process p = run.exec("sh " + "cmd.sh");
+
+    			BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
+    			String line = new String();
+    			String strLogPath = new String();
+    			String strTestLogPathAbs = new String();
+    			String strScreenshotPathAbs = new String();
+
+                            while ((line = br.readLine()) != null) {
+
+                                    if (line.contains("Report directory: ./")) {
+                                            strLogPath = runtimeSupport.getReportDirectoryPath(line);
+                                            strTestLogPathAbs = strLogPath + "error_log.1.txt";
+                                            strScreenshotPathAbs = strLogPath + "screenshot." + strdevID + ".1.png";
+                                            TaskEnv.get().setTestLogPath(strTestLogPathAbs);
+                                    }
+                                    if (line.contains("PASSES:   1")) {
+    					TaskEnv.get().setStatus(StatusCode.PASS);
+                                    } else if (line.contains("FAILURES: 1")) {
+    					TaskEnv.get().setStatus(StatusCode.FAIL);
+    					bScreenshotRequired = true;
+                                    } else if (line.contains("ERRORS:   1")) {
+    					TaskEnv.get().setStatus(StatusCode.EXCEPTION);
+    					bScreenshotRequired = true;
+    				}
+                            }
+    			runtimeSupport.deleteRunTimeConfiguration("cmd.sh");
+    			if (bScreenshotRequired) {
+    				TaskEnv.get().setScreenshotPath(strScreenshotPathAbs);
+    			}
+			TaskEnv.get().setDeviceIDForLog(strdevID);
+	} catch (IOException e) {
+    			System.out.println(e.getMessage());
+    		}
+        }
+
+}

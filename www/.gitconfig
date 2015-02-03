@@ -1,0 +1,70 @@
+[user]
+  name  = vaibhav
+  email = vaibhav@motorola.com
+[color]
+  ui = auto
+#
+#pull changes from Gerrit Slave
+#
+[url "ssh://ca88git.am.mot-mobility.com:29418/"]
+  insteadOf=ssh://gerrit.pcs.mot.com:29418/
+  insteadOf=ssh://gerrit.mot.com:29418/
+  insteadOf=ssh://gerrit.blurdev.com:29418/
+  insteadOf=ssh://git.blurdev.com:29418/
+  insteadOf=ssh://gerrit.pcs.mot.com/
+  insteadOf=ssh://gerrit.mot.com/
+  insteadOf=ssh://gerrit.blurdev.com/
+  insteadOf=ssh://git.blurdev.com/
+  insteadOf=ssh://git.blurdev.com/proj/repo01/blur_gerrit_mirror/
+  insteadOf=ssh://gerrit.blurdev.com/proj/repo01/blur_gerrit_mirror/
+  insteadOf=file:///proj/repo01/gerrit/
+  insteadOf=/proj/repo01/gerrit/
+  insteadOf=file:///proj/repo01/blur_gerrit_mirror/
+  insteadOf=/proj/repo01/blur_gerrit_mirror/
+  insteadOf=ssh://ca88git.am.mot-mobility.com/proj/repo01/gerrit/
+  insteadOf=ssh://ca88git.am.mot-mobility.com/proj/repo01/blur_gerrit_mirror/
+  insteadOf=ssh://vaibhav@gerrit.pcs.mot.com:29418/
+  insteadOf=ssh://vaibhav@gerrit.mot.com:29418/
+  insteadOf=ssh://vaibhav@gerrit.blurdev.com:29418/
+  insteadOf=ssh://vaibhav@git.blurdev.com:29418/
+  insteadOf=ssh://vaibhav@gerrit.pcs.mot.com/
+  insteadOf=ssh://vaibhav@gerrit.mot.com/
+  insteadOf=ssh://vaibhav@gerrit.blurdev.com/
+  insteadOf=ssh://vaibhav@git.blurdev.com/
+  insteadOf=ssh://vaibhav@git.blurdev.com/proj/repo01/blur_gerrit_mirror/
+  insteadOf=ssh://vaibhav@gerrit.blurdev.com/proj/repo01/blur_gerrit_mirror/
+  insteadOf=ssh://vaibhav@ca88git.am.mot-mobility.com/proj/repo01/gerrit/
+  insteadOf=ssh://vaibhav@ca88git.am.mot-mobility.com/proj/repo01/blur_gerrit_mirror/
+  insteadOf=ssh://vaibhav@ca88git.am.mot-mobility.com/29418/
+#
+#push changes to gerrit.mot.com
+#
+[url "ssh://gerrit.mot.com:29418/"]
+  pushinsteadOf=ssh://gerrit.pcs.mot.com/
+  pushinsteadOf=ssh://gerrit.mot.com/
+  pushinsteadOf=ssh://gerrit.pcs.mot.com/gerrit1/srv/git/
+  pushinsteadOf=ssh://gerrit.mot.com/gerrit1/srv/git/
+  pushinsteadOf=file:///proj/repo01/gerrit/
+  pushinsteadOf=/proj/repo01/gerrit/
+  pushinsteadof=ssh://git.blurdev.com/
+  pushinsteadof=file:///proj/repo01/blur_gerrit_mirror/
+  pushinsteadof=ssh://gerrit.blurdev.com/
+  pushinsteadof=ssh://git.blurdev.com/proj/repo01/blur_gerrit_mirror/
+  pushinsteadof=ssh://ca88git.am.mot-mobility.com/proj/repo01/blur_gerrit_mirror/
+  pushinsteadof=ssh://ca88git.am.mot-mobility.com/proj/repo01/gerrit/
+  pushinsteadof=ssh://ca88git.am.mot-mobility.com:29418/
+  pushinsteadof=ssh://gerrit.pcs.mot.com:29418/
+  pushinsteadof=ssh://gerrit.mot.com:29418/
+  pushinsteadOf=ssh://vaibhav@gerrit.pcs.mot.com/
+  pushinsteadOf=ssh://vaibhav@gerrit.mot.com/
+  pushinsteadOf=ssh://vaibhav@gerrit.pcs.mot.com/gerrit1/srv/git/
+  pushinsteadOf=ssh://vaibhav@gerrit.mot.com/gerrit1/srv/git/
+  pushinsteadof=ssh://vaibhav@git.blurdev.com/
+  pushinsteadof=ssh://vaibhav@gerrit.blurdev.com/
+  pushinsteadof=ssh://vaibhav@git.blurdev.com/proj/repo01/blur_gerrit_mirror/
+  pushinsteadof=ssh://vaibhav@ca88git.am.mot-mobility.com/proj/repo01/blur_gerrit_mirror/
+  pushinsteadof=ssh://vaibhav@ca88git.am.mot-mobility.com/proj/repo01/gerrit/
+  pushinsteadof=ssh://vaibhav@ca88git.am.mot-mobility.com:29418/
+  pushinsteadof=ssh://vaibhav@gerrit.pcs.mot.com:29418/
+  pushinsteadof=ssh://vaibhav@gerrit.mot.com:29418/
+#--END--

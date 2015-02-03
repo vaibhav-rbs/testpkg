@@ -1,0 +1,7 @@
+[
+	{"name":"IP_Of_Default_Test_Machine","value":"","editor":"text"},
+        {"name":"Target_Device_Serial_Number","value":"","editor":"text"},
+        {"name":"Companion_Device_Serial_Number","value":"","editor":"text"},
+        {"name":"Framework_Directory","value":"/home/autotest/Invader+","editor":"text"}
+]
+

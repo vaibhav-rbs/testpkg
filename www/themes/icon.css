@@ -1,0 +1,102 @@
+.icon-column-add {
+	background:url('icons/add_column_16.png') no-repeat;
+}
+.icon-row-add {
+	background:url('icons/add_row_16.png') no-repeat;
+}
+.icon-column-delete {
+	background:url('icons/delete_column_16.png') no-repeat;
+}
+.icon-row-delete {
+	background:url('icons/delete_row_16.png') no-repeat;
+}
+.icon-save {
+	background:url('icons/diskette_16.png') no-repeat;
+}
+.icon-new {
+	background:url('icons/document_16.png') no-repeat;
+}
+.icon-edit {
+	background:url('icons/edit_16.png') no-repeat;
+}
+.icon-find {
+	background:url('icons/find_in_file_16.png') no-repeat;
+}
+.icon-reload {
+	background:url('icons/reload_16.png') no-repeat;
+}
+.icon-upload {
+	background:url('icons/upload_16.png') no-repeat;
+}
+.icon-notepad {
+	background:url('icons/notepad_16.png') no-repeat;
+}
+.icon-search {
+	background:url('icons/search_16.png') no-repeat;
+}
+.icon-add {
+	background:url('icons/file_transfer_16.png') no-repeat;
+}
+.icon-download {
+	background:url('icons/inbox_16.png') no-repeat;
+}
+.icon-trash {
+	background:url('icons/trash_can_16.png') no-repeat;
+}
+.icon-up {
+	background:url('icons/move_prev.png') no-repeat;
+}
+.icon-up-end {
+	background:url('icons/move_first.png') no-repeat;
+}
+.icon-down {
+	background:url('icons/move_next.png') no-repeat;
+}
+.icon-down-end {
+	background:url('icons/move_last.png') no-repeat;
+}
+.icon-job {
+	background:url('icons/briefcase_16.png') no-repeat;
+}
+.icon-script {
+	background:url('icons/script_12x14.png') no-repeat center;
+}
+.icon-access {
+	background:url('icons/access_point_60.png') no-repeat center;
+}
+.icon-check {
+	background:url('icons/checkmark_12.png') no-repeat;
+}
+.icon-view {
+	background:url('icons/views_16.png') no-repeat;
+}
+.icon-play {
+	background:url('icons/play_16.png') no-repeat;
+}
+.icon-gear {
+	background:url('icons/gear_16.png') no-repeat;
+}
+.icon-delete {
+	background:url('icons/delete_16.png') no-repeat;
+}
+.icon-calendar {
+	background:url('icons/calendar_16.png') no-repeat;
+}
+.icon-zoom {
+	background:url('icons/zoom_16.png') no-repeat;
+}
+.icon-add-darkgray {
+	background:url('icons/add_16.png') no-repeat;
+}
+.icon-delete-darkgray {
+	background:url('icons/delete_16_darkgray.png') no-repeat;
+}
+.icon-check-darkgray {
+	background:url('icons/checkmark_16_darkgray.png') no-repeat;
+}
+.icon-folder {
+	background:url('icons/folder_16.png') no-repeat;
+}
+.icon-browse {
+	background:url('icons/browse_16.png') no-repeat;
+}
